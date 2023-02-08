@@ -20,3 +20,9 @@ Add to config/app.php
     ],
 ```
 
+### Command
+
+```shell
+php artisan setup
+```
+
