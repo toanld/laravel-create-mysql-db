@@ -6,20 +6,6 @@ Require this package with composer. It is recommended to only require the packag
 composer require toanld/laravel-create-mysql-db
 ```
 
-### Syntax
-Add to config/app.php 
-```php
-'providers' => [
-
-        /*
-         * Laravel Framework Service Providers...
-         */
-        //......
-        \Toanld\Setup\SetupProvider::class
-
-    ],
-```
-
 ### Command
 
 ```shell
