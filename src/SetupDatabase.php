@@ -77,6 +77,9 @@ class SetupDatabase extends Command
                 }
             }
         }
+        if(!file_exists(base_path() . "/.env") && file_exists(base_path() . "/.env.example")){
+            copy(base_path() . "/.env.example",base_path() . "/.env");
+        }
         file_put_contents(base_path() . "/.env",implode("\n",$envs));
 
     }
